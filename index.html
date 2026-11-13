@@ -53,6 +53,14 @@
     margin-left: 6px;
   }
   #tap p { margin: 0; font-size: 22px; letter-spacing: 0.08em; }
+  #dl {
+    position: fixed; top: max(16px, env(safe-area-inset-top)); left: 50%;
+    transform: translateX(-50%); z-index: 10;
+    background: #f7f2ea; color: #0b0a09; text-decoration: none;
+    font-size: 20px; letter-spacing: 0.04em; font-weight: bold;
+    padding: 14px 28px; border-radius: 999px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.45); white-space: nowrap;
+  }
 </style>
 </head>
 <body>
@@ -61,6 +69,7 @@
     <source src="movie.mp4" type="video/mp4">
   </video>
 </div>
+<a id="dl" href="movie.mp4" download="Noelle Prescott video.mp4">&#11015; Download video</a>
 <div id="tap" role="button" aria-label="Play">
   <div class="ring"></div>
   <p>Tap to play</p>
